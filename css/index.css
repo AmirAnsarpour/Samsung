@@ -1,0 +1,1029 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    width: 57%;
+    margin: 0 auto;
+    cursor: default;
+}
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'Samsung normal';
+    src: url('../fonts/SamsungSharpSans.woff2') format('woff2'),
+        url('../fonts/SamsungSharpSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Samsung 500';
+    src: url('../fonts/SamsungSharpSans-Medium.woff2') format('woff2'),
+        url('../fonts/SamsungSharpSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Samsung bold';
+    src: url('../fonts/SamsungSharpSans-Bold.woff2') format('woff2'),
+        url('../fonts/SamsungSharpSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+/* ****************heading*********************** */
+#main{
+    display: flex;
+}
+#imagebox{
+    display: block;
+    height: 95px;
+    width: 120px;
+    background-image: url('../images/SamsungLogo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px 20px;
+}
+#heading{
+    display: flex;
+    flex-wrap: wrap;
+    height: 95px;
+    font-family: 'Samsung bold', sans-serif;
+}
+.heading {
+    height: 25px;
+    text-decoration: none;
+    color: black;
+    line-height: 95px;
+    font-size: 14px;
+    padding: 6px 8px;
+    border-radius: 20px;
+    transition: all 200ms ease-out 0s;
+}
+.heading:hover{
+    border: 0px solid white;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px 2px 10px #757575;
+}
+#Offers{
+    margin-right: 200px;
+}
+#Business{
+    margin-right: 30px;
+}
+.headicon{
+    text-decoration:none;
+    color: black;
+    display: inline;
+    line-height: 95px;
+    font-size: 25px;
+    margin-left: 5px;
+    padding: 10px 10px;
+}
+/* *****************image-box********************** */
+#image-box{
+    width: 100%;
+    height: 640px;
+    background-image: url('../images/image-box-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#circle-image-box{
+    width: 100%;
+    height: 640px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#circle-image-box a{
+    text-decoration: none;
+}
+#circle-image-box div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-family: 'samsung normal', sans-serif;
+    background-color: rgba(1, 1, 1, 0.4);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 40px;
+    font-size: 40px;
+    margin: 0px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    stroke:#fff;
+    stroke-opacity: .15;
+}
+#circle-image-box div:hover{
+    background-color: rgba(1, 1, 1, 0.6);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+#text-image-box{
+    margin: -435px 0px 0px 90px;
+}
+#text-image-box h5{
+    font-family: 'samsung bold', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+#text-image-box h1{
+    font-family: 'samsung bold', sans-serif;
+    font-size: 48px;
+    color: white;
+}
+#text-image-box p{
+    font-family: 'samsung normal', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin: 20px 0px 40px 0px;
+}
+#text-image-box a{
+    font-family: 'samsung 500', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: all 250ms ease-out 0s;
+}
+#text-image-box a:hover{
+    background-color: #d8d8d8;
+    box-shadow: 0px 4px 10px #262626;
+}
+/* *****************list-shop********************** */
+#list-shop-text{
+    height: 110px;
+}
+#list-shop-text h2{
+    font-family: 'samsung bold', sans-serif;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 38px;
+    width: 900px;
+    transition: all 400ms linear 0s;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+#list-shop-text h2:hover{
+    cursor: pointer;
+    text-shadow: 0px 2px 20px #7b7b7b;
+    text-decoration-color: #c1c1c1;
+}
+#list-shop-name{
+    width: 75%;
+    margin: 20px auto;
+    font-family: 'samsung normal', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+#list-shop-name h5{
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: all 400ms ease-out 0s;
+}
+#list-shop-name h5:hover{
+    color: #535353;
+    border-bottom: 1px solid #313131;
+}
+#list-shop-box{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px 0px;
+    justify-content: space-evenly;
+}
+#list-shop-box a{
+    text-decoration: none;
+}
+#list-shop1{
+    width:450px;
+    height: 720px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#list-shop1 img{
+    width:100%;
+    transition: all 200ms linear 0s;
+}
+#list-shop1:hover img{
+    transform: scale(1.05);
+}
+#list-shop2{
+    width:450px;
+    height: 720px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#list-shop2 img{
+    width:100%;
+    transition: all 200ms linear 0s;
+}
+#list-shop2:hover img{
+    transform: scale(1.05);
+}
+#list-shop3{
+    width:450px;
+    height: 720px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#list-shop3 img{
+    width:100%;
+    transition: all 200ms linear 0s;
+}
+#list-shop3:hover img{
+    transform: scale(1.05);
+}
+#list-shop-box h5{
+    font-family: 'samsung bold', sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 23px;
+    margin-top: -100px;
+}
+#list-shop-box p{
+    font-family: 'samsung normal', sans-serif;
+    color: black;
+    text-align: center;
+    transition: all 200ms linear 0s;
+}
+#list-shop1:hover p{
+    margin-top: -15px;
+    color: transparent;
+}
+#list-shop2:hover p{
+    margin-top: -15px;
+    color: transparent;
+}
+#list-shop3:hover p{
+    margin-top: -15px;
+    color: transparent;
+}
+#list-shop-link1{
+    font-family: 'samsung bold', sans-serif;
+    width: 150px;
+    padding: 10px 15px;
+    display: block;
+    font-size: 15px;
+    color: transparent;
+    border-radius: 30px;
+    margin: 10px auto;
+    text-align: center;
+    transition: all 200ms linear 0s;
+}
+#list-shop1:hover #list-shop-link1{
+    background-color: black;
+    color: white;
+}
+#list-shop-link2{
+    font-family: 'samsung bold', sans-serif;
+    width: 150px;
+    padding: 10px 15px;
+    display: block;
+    font-size: 15px;
+    color: transparent;
+    border-radius: 30px;
+    margin: 10px auto;
+    text-align: center;
+    transition: all 200ms linear 0s;
+}
+#list-shop2:hover #list-shop-link2{
+    background-color: black;
+    color: white;
+}
+#list-shop-link3{
+    font-family: 'samsung bold', sans-serif;
+    width: 150px;
+    padding: 10px 15px;
+    display: block;
+    color: transparent;
+    font-size: 15px;
+    border-radius: 30px;
+    margin: 10px auto;
+    text-align: center;
+    transition: all 200ms linear 0s;
+}
+#list-shop3:hover #list-shop-link3{
+    background-color: black;
+    color: white;
+}
+/* *****************color-page-1********************** */
+#color-page-1{
+    height: 810px;
+    margin: 30px auto;
+}
+#color-page-1-in{
+    width: 900px;
+    margin: 0px auto;
+}
+#color-page-1 img{
+    margin: 0px 80px;
+    border-radius: 25px;
+    transition: all 200ms linear 0s;
+}
+#color-page-1 img:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 5px 20px #767676;
+}
+#color-page-1-in h2{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 40px;
+    width: 500px;
+    margin: 0px auto;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    font-family: 'samsung bold', sans-serif;
+    transition: all 400ms linear 0s;
+}
+#color-page-1-in h2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #c1c1c1;
+    text-shadow: 0px 2px 20px #7b7b7b;
+}
+#color-page-1-flex{
+    display: flex;
+    justify-content: space-between;
+}
+#color-page-1-in h5{
+    font-family: 'samsung bold', sans-serif;
+    font-size: 15px;
+    margin: 30px 0px;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: all 400ms ease-out 0s;
+}
+#color-page-1-in h5:hover{
+    color: #535353;
+    border-bottom: 1px solid #313131;
+}
+#color-page-1-pa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#color-page-1-pa h1{
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'samsung bold', sans-serif;
+}
+#color-page-1-pa p{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'samsung normal', sans-serif;
+}
+#color-page-link1{
+    font-family: 'samsung 500', sans-serif;
+    text-decoration: underline;
+    color: black;
+    margin: 14px auto;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: all 400ms ease-out 0s;
+}
+#color-page-link2{
+    display: inline-block;
+    font-family: 'samsung 500', sans-serif;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    margin: 20px auto;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: all 400ms ease-out 0s;
+}
+#color-page-link2:hover{
+    background-color: #313131;
+    box-shadow: 0px 2px 5px #757575;
+}
+/* *****************color-page-2********************** */
+#color-page-2{
+    height: 810px;
+    background-color: #F5EDE7;
+}
+#color-page-2-in{
+    width: 750px;
+    margin: 0px auto;
+}
+#color-page-2 img{
+    border-radius: 25px;
+    transition: all 200ms linear 0s;
+}
+#color-page-2 img:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 5px 20px #767676;
+}
+#color-page-2-in h2{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'samsung bold', sans-serif;
+    transition: all 400ms linear 0s;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+#color-page-2-in h2:hover{
+    cursor: pointer;
+    text-shadow: 0px 2px 20px #7b7b7b;
+    text-decoration-color: #c1c1c1;
+}
+#color-page-2-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+#color-page-2-in h5{
+    font-family: 'samsung bold', sans-serif;
+    font-size: 16px;
+    margin: 25px 0px;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: all 400ms ease-out 0s;
+}
+#color-page-2-in h5:hover{
+    color: #535353;
+    border-bottom: 1px solid #313131;
+}
+#color-page-2-pa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#color-page-2-pa h1{
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'samsung bold', sans-serif;
+}
+#color-page-2-pa p{
+    text-align: center;
+    font-size: 19px;
+    font-family: 'samsung normal', sans-serif;
+}
+#color-page-2-pa a{
+    font-family: 'samsung 500', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    margin: 10px auto;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: all 400ms ease-out 0s;
+}
+#color-page-2-pa a:hover{
+    background-color: #313131;
+    box-shadow: 0px 2px 5px #757575;
+}
+/* *****************color-page-2********************** */
+#color-page-3{
+    height: 810px;
+    background-color: #F7F7F7;
+}
+#color-page-3-in{
+    width: 750px;
+    margin: 0px auto;
+}
+#color-page-3 img{
+    border-radius: 25px;
+    transition: all 200ms linear 0s;
+}
+#color-page-3 img:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 5px 20px #767676;
+}
+#color-page-3-in h2{
+    width: 500px;
+    padding-top: 40px;
+    text-align: center;
+    margin: 0px auto;
+    font-size: 40px;
+    font-family: 'samsung bold', sans-serif;
+    transition: all 400ms linear 0s;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+#color-page-3-in h2:hover{
+    cursor: pointer;
+    text-shadow: 0px 2px 20px #7b7b7b;
+    text-decoration-color: #c1c1c1;
+}
+#color-page-3-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+#color-page-3-in h5{
+    font-family: 'samsung bold', sans-serif;
+    font-size: 16px;
+    margin: 25px 0px;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: all 400ms ease-out 0s;
+}
+#color-page-3-in h5:hover{
+    color: #535353;
+    border-bottom: 1px solid #313131;
+}
+#color-page-3-pa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#color-page-3-pa h1{
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'samsung bold', sans-serif;
+}
+#color-page-3-pa p{
+    text-align: center;
+    font-size: 19px;
+    font-family: 'samsung normal', sans-serif;
+}
+#color-page-3-pa a{
+    font-family: 'samsung 500', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    margin: 10px auto;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: all 400ms ease-out 0s;
+}
+#color-page-3-pa a:hover{
+    background-color: #313131;
+    box-shadow: 0px 2px 5px #757575;
+}
+/* *****************key-feature********************** */
+#key-feature{
+    width: 750px;
+    margin: 30px auto;
+}
+#key-feature h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'samsung bold', sans-serif;
+    margin: 0px auto;
+    width: 300px;
+    transition: all 400ms linear 0s;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+#key-feature h2:hover{
+    cursor: pointer;
+    text-shadow: 0px 2px 20px #7b7b7b;
+    text-decoration-color: #c1c1c1;
+}
+#key-feature div{
+    display: flex;
+    justify-content: space-around;
+}
+#key-feature img{
+    border-radius: 25px;
+    transition: all 200ms linear 0s;
+}
+#key-feature img:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 5px 20px #767676;
+}
+#key-feature p{
+    font-family: 'samsung bold', sans-serif;
+    font-size: 16px;
+    margin: 25px 0px;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: all 400ms ease-out 0s;
+}
+#key-feature p:hover{
+    color: #535353;
+    border-bottom: 1px solid #313131;
+}
+/* *****************key-feature2********************** */
+#key-feature2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#key-feature2 h2{
+    text-align: center;
+    font-size: 48px;
+    font-family: 'samsung bold', sans-serif;
+    margin: 0px auto;
+    width: 800px;
+    transition: all 400ms linear 0s;
+}
+#key-feature2 h2:hover{
+    cursor: pointer;
+    text-shadow: 0px 2px 20px #7b7b7b;
+}
+#key-feature2 p{
+    text-align: center;
+    font-size: 19px;
+    font-family: 'samsung normal', sans-serif;
+}
+#key-feature2 a{
+    font-family: 'samsung 500', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    margin: 10px auto;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: all 400ms ease-out 0s;
+}
+#key-feature2 a:hover{
+    background-color: #313131;
+    box-shadow: 0px 2px 5px #757575;
+}
+/* *****************page-image********************** */
+#page-image{
+    width: 100%;
+    height: 217px;
+    margin: 70px 0px;
+    background-image: url('../images/page-image.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#page-image a{
+    display: inline-block;
+    font-family: 'samsung 500', sans-serif;
+    text-decoration: none;
+    background-color: black;
+    font-size: 14px;
+    color: white;
+    border-radius: 30px;
+    padding: 8px 20px;
+    margin-left: 90px;
+    margin-top: 140px;
+    transition: all 400ms ease-out 0s;
+}
+#page-image a:hover{
+    background-color: #313131;
+    box-shadow: 0px 2px 5px #757575;
+}
+/* *****************Explore****************************************************** */
+#explore h1{ 
+    text-align: center;
+    width: 600px;
+    margin: 20px auto;
+    font-size: 40px;
+    font-family: 'samsung bold', sans-serif;
+    margin-bottom: 30px;
+    transition: all 400ms linear 0s;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+#explore h1:hover{
+    cursor: pointer;
+    text-shadow: 0px 2px 20px #7b7b7b;
+    text-decoration-color: #c1c1c1;
+}
+#photo-explore{
+    width: 684px;
+    height: 684px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+#photo-explore img{
+    width: 684px;
+    height: 684px;
+    transition: all 150ms linear 0s;
+}
+#photo-explore img:hover{
+    transform: scale(1.1);
+}
+#explore-list{
+    height: 650px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    float: right;
+}
+#explore-list p{
+    display: inline;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'samsung bold', sans-serif;
+}
+#explore-list h2{
+    font-family: 'samsung bold', sans-serif;
+    display: inline;
+    font-size: 23px;
+}
+#explore-list a{
+    display: block;
+    font-family: 'samsung bold', sans-serif;
+    color: transparent;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: -400px;
+    transition: all 200ms linear 0s;
+}
+#explore-list-1:hover a{
+    color: black;
+    text-decoration: underline;
+}
+#explore-list-2:hover a{
+    color: black;
+    text-decoration: underline;
+}
+#explore-list-3:hover a{
+    color: black;
+    text-decoration: underline;
+}
+#explore-list-4:hover a{
+    color: black;
+    text-decoration: underline;
+}
+#explore-list-5:hover a{
+    color: black;
+    text-decoration: underline;
+}
+#explore-list div{
+    margin-left: 10px;
+    transition: all 200ms linear 0s;
+}
+#explore-list div:hover{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgb(1, 1, 1);
+    border-bottom: 1px solid #e4e4e4;
+}
+#explore-list-1:hover #explore1{
+    filter: blur(50%);
+}
+/* *****************search-box********************** */
+#searchbox{
+    margin: 50px auto;
+}
+#searchbox h2{
+    text-align: center;
+    font-family: 'samsung bold', sans-serif;
+    font-size: 38px;
+    width: 600px;
+    margin: 20px auto;
+    margin-top: 100px;
+    transition: all 400ms linear 0s;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+#searchbox h2:hover{
+    cursor: pointer;
+    text-shadow: 0px 2px 20px #7b7b7b;
+    text-decoration-color: #c1c1c1;
+}
+#search-box{
+    width: 450px;
+    height: 50px;
+    margin: 20px auto;
+}
+#search-box form{
+    display: inline-block;
+    border-radius: 22px;
+    background-color: #F4F4F4;
+    border: 1px solid #757575;
+    transition: all 400ms ease-out 0s;
+}
+#search-box form:hover{
+    box-shadow: 0px 3px 10px #757575;
+}
+#search-box input{
+    width: 400px;
+    height: 50px;
+    padding-left: 20px;
+    background-color: transparent;
+    font-size: 16px;
+}
+#search-box i{
+    font-size: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+#chip{
+    width: 500px;
+    height: 80px;
+    margin: 0px auto;
+    padding-top: 5px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#chip a{
+    text-decoration: none;
+    color: #313131;
+    border: 1px solid #9e9e9e;
+    border-radius: 30px;
+    padding: 6px 15px;
+    margin: 0px 3px;
+    font-family: 'samsung 500', sans-serif;
+    font-size: 12px;
+    transition: all 300ms linear 0s;
+}
+#chip a:hover{
+    background-color: #e4e4e4;
+}
+/* *****************big-paragraph********************** */
+#big-paragraph{
+    width: 90%;
+    margin: 20px auto;
+    height: 800px;
+    font-family: 'samsung normal', sans-serif;
+    color: rgb(54, 54, 54);
+}
+.iconh6{
+    width: 80%;
+    display: inline-block;
+    margin-left: -75px;
+}
+#big-paragraph i{
+    font-size: 20px;
+    color: black;
+}
+#big-paragraph h6{
+    font-size: 18px;
+    font-family: 'samsung bold', sans-serif;
+    color: black;
+    display: inline-block;
+    line-height: 35px;
+    margin-left: 10px;
+}
+#big-paragraph div{
+    padding-left: 40px;
+    font-size: 14px;
+}
+#big-paragraph sup{
+    font-size: 9px;
+}
+#big-paragraph p{
+    margin: 15px 0px;
+    font-size: 14px;
+}
+#big-paragraph>p{
+    margin: 10px 0px;
+}
+#big-paragraph a{
+    color: rgb(32, 162, 255);
+    text-decoration: none;
+}
+/* ******************above footer********************* */
+#above-footer{
+    width: 100%;
+    height: 50px;
+    display: block;
+    border-top: 1px solid rgb(204, 204, 204);
+    font-size: 14px;
+}
+#above-footer p{
+    display: inline-block;
+    line-height: 50px;
+    margin-right: 20px;
+    font-family: 'samsung normal', sans-serif;
+}
+#above-footer p:first-child{
+    margin-left: 400px;
+    font-family: 'samsung bold', sans-serif;
+}
+#above-footer a{
+    color: black;
+    font-family: 'samsung bold', sans-serif;
+    text-decoration: none;
+}
+/* *****************footer********************** */
+#footer{
+    height: 630px;
+    text-decoration: none;
+    display: flex;
+    font-size: 15px;
+}
+.footer{
+    height: 630px;
+    width: 365px;
+    border-top: 1px solid rgb(204, 204, 204);
+    border-bottom: 1px solid rgb(204, 204, 204);
+    border-right: 1px solid rgb(204, 204, 204);
+}
+.footer:last-child{
+    border-right: 1px solid white;
+}
+.footer h2{
+    font-family: 'Samsung normal', sans-serif;
+    color:rgb(33, 36, 40);
+    font-size: 18px;
+    padding-left: 24px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.footer a{
+    text-decoration: none;
+    color: rgb(33, 36, 40);
+    font-family: 'Samsung normal', sans-serif;
+    display: block;
+    margin: 0px 5px;
+    padding-top: 9px;
+    padding-left: 20px;
+}
+.footer a:hover{
+    text-decoration: underline;
+    color: rgb(20, 40, 160);
+}
+/* ****************Copyright*********************** */
+#Copyright{
+    font-family: 'Samsung normal', sans-serif;
+    font-size: 12px;
+    padding: 0px 0px 15px 36px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+/* ******************footer-language********************* */
+#footer-language{
+    width: 100%;
+    height: 70px;
+    font-family: 'Samsung normal', sans-serif;
+    display: flex;
+    line-height: 70px;
+    color:rgb(33, 36, 40);
+    font-size: 13px;
+    margin-left: 26px;
+}
+#footer-language h5{
+    display: inline;
+    font-size: 13px;
+    padding: 0px 24px 0px 0px;
+    border-right: 1px solid rgb(204, 204, 204);
+}
+#footer-language h5:hover{
+    color: rgb(20, 40, 160);
+}
+#footer-language a{
+    text-decoration: none;
+    color: black;
+    margin: 0px 10px;
+    transition: all 300ms ease-out 0s;
+}
+#twitter:hover{
+    color: #1DA1F2;
+}
+#facebook:hover{
+    color: #4267B2;
+}
+#instagram:hover{
+    color: #C13584;
+}
+#youtube:hover{
+    color: #FF0000;
+}
+#envelope:hover{
+    color: #34A853;
+}
+#footer-language p{
+    margin-left: 375px;
+    margin-right: 10px;
+}
+#footer-language i{
+    font-size: 25px;
+    line-height: 70px;
+}
+
+.top {
+    
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 25px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-decoration: none;
+    font-family: 'samsung bold', sans-serif;
+    color: #fff;
+    background: #6f6f6f;
+    border-radius: 50%;
+    transition: all 300ms linear 0s;
+}
+.top:hover{
+    background: #202020;
+}

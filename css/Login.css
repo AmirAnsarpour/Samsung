@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(1, 1, 1);
+}
+@font-face {
+    font-family: 'Samsung normal';
+    src: url('../fonts/SamsungSharpSans.woff2') format('woff2'),
+        url('../fonts/SamsungSharpSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Samsung 500';
+    src: url('../fonts/SamsungSharpSans-Medium.woff2') format('woff2'),
+        url('../fonts/SamsungSharpSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Samsung bold';
+    src: url('../fonts/SamsungSharpSans-Bold.woff2') format('woff2'),
+        url('../fonts/SamsungSharpSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+/* *************************************** */
+#header{
+    height: 90px;
+    background-color: rgb(23, 23, 23);
+}
+#header div{
+    width: 1000px;
+    height: 25px;
+    margin: 0px auto;
+    padding-top: 36px;
+}
+#header img{
+    margin-left: -66px;
+    width: 215px;
+    filter: invert(1);
+    color: rgb(250, 250, 250);
+}
+/* *************************************** */
+#main-form{
+    width: 640px;
+    height: 640px;
+    border-radius: 25px;
+    margin: 45px auto;
+    background-color: rgb(23, 23, 23);
+}
+#main-form h2{
+    font-family: 'Samsung normal';
+    font-size: 23px;
+    color: rgb(229, 229, 229);
+    text-align: center;
+    padding: 80px 0px 75px 0px;
+}
+#main-form form{
+    width: 360px;
+    height: 360px;
+    margin: 20px auto;
+}
+#email{
+    width: 100%;
+    height: 36px;
+    color: rgb(204, 204, 204);
+    font-family: 'Samsung normal';
+    font-size: 19px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    background-color: transparent;
+}
+#email:hover{
+    border-bottom: 1px solid rgb(0, 93, 186);
+}
+#remember{
+    margin: 30px 0px;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+#main-form label{
+    color: white;
+    font-family: 'Samsung normal';
+    font-size: 18px;
+    margin-left: 15px;
+}
+#main-form button{
+    width: 100%;
+    height: 44px;
+    border-radius: 25px;
+    background-color: rgba(0, 93, 186, 0.655);
+    color: rgb(130, 130, 130);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.linko{
+    font-family: 'Samsung 500';
+    display: inline-block;
+    color: rgb(130, 130, 130);
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-decoration: underline;
+}
+.login{
+    height: 44px;
+    background-color: rgb(93, 93, 93);
+    margin: 10px 0px;
+    border-radius: 30px;
+}
+#connect p{
+    font-family: 'Samsung normal';
+    display: block;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin: -34px 20px;
+    text-decoration: none;
+}
+#main-form img{
+    width: 37px;
+    margin: 3px 0px 0px 4px;
+}
+/* *************************************** */
+#logo-footer{
+    width: 40%;
+    height: 18px;
+    margin: 0px auto;
+    filter: invert(0.3);
+    background-image: url('../images/samsung_login_logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+#bottom-footer{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    font-family: 'samsung 500';
+    font-size: 12px;
+}
+#bottom-footer a{
+    color: rgb(153, 153, 153);
+    margin-right: 25px;
+}
+#bottom-footer p{
+    color: rgb(153, 153, 153);
+    margin-left: 170px;
+}
